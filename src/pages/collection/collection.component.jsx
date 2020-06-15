@@ -5,7 +5,7 @@ import CollectionsContext from '../../context/collections/collections.context';
 
 import './collection.styles.scss';
 
-const CollectionPage = ({ match }) => {
+const CollectionPage = ({ match }) => { 
   const collections = useContext(CollectionsContext);
   const collection = collections[match.pramas.collectionId];
   const { title, items } = collection;
